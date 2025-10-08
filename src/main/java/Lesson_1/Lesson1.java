@@ -1,3 +1,5 @@
+package Lesson_1;
+
 import java.util.Arrays;
 
 public class Lesson1 {
@@ -165,6 +167,7 @@ public class Lesson1 {
 
         }
         return array;
+
 
     }
 
