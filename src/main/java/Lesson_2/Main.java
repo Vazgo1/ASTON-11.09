@@ -2,8 +2,8 @@ package Lesson_2;
 
 public class Main {
     public static void main(String[] args) {
-        Parc parc = new Parc("Карусель", "18:30", 300);
-        parc.runs();
+        Parc.Attraction attraction1 = new Parc().new Attraction("Карусель", "18:00",300);
+        attraction1.runs();
         array();
     }
 
