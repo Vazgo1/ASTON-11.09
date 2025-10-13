@@ -5,6 +5,7 @@ public class Main {
         Parc.Attraction attraction1 = new Parc().new Attraction("Карусель", "18:00",300);
         attraction1.runs();
         array();
+
     }
 
     public static void array() {
