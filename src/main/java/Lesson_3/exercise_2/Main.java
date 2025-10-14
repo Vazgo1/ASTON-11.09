@@ -7,6 +7,7 @@ public class Main {
         Rectangle rectangle =  new Rectangle("Прямоугольник ",5,8,"Красный","Синий");
         Triangle triangle = new Triangle("Треугольник",6,9,9,"Красный","Синий");
 
+
         circle.info();
         rectangle.info();
         triangle.info();
