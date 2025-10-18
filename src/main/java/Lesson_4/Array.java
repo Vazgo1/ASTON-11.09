@@ -23,7 +23,7 @@ public class Array {
 
                     try {
                         a += Integer.parseInt(arr[i][j]);
-                } catch (ArrayIndexOutOfBoundsException e) {
+                } catch (NumberFormatException e) {
                         throw new MyArrayDataException(i,j,arr[i][j]);
                     }
                     }

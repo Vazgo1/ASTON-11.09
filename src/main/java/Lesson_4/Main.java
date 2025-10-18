@@ -45,5 +45,13 @@ public class Main {
         } catch (MyArraySizeException | MyArrayDataException e) {
             e.printStackTrace();
         }
+
+        try {
+            int[] arrNum = {1,2,3,4,5};
+            System.out.println(arrNum[8]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ArrayIndexOutOfBoundsException - Не валидный индекс массива " + e.getMessage() );
+        }
+
     }
 }
