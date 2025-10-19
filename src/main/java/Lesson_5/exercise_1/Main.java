@@ -1,4 +1,4 @@
-package Lwsson_5.exercise_1;
+package Lesson_5.exercise_1;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -13,6 +13,8 @@ public class Main {
         arrayList.add(new Student("Сергей", 302, 3, 2.1));
         arrayList.add(new Student("Киррил", 102, 1, 2.4));
         arrayList.add(new Student("Антон", 402, 4, 4.5));
+
+
 
         HashSet stud = new HashSet();
         stud.add(new Student("Иван", 102, 2, 4.2));

@@ -1,4 +1,4 @@
-package Lwsson_5.exercise_2;
+package Lesson_5.exercise_2;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,6 +24,7 @@ public class PhoneDirectory {
 
     public List<String> get(String surname) {
         return directory.getOrDefault(surname, new ArrayList<>());
+
     }
 
 

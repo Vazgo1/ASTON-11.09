@@ -1,6 +1,4 @@
-package Lwsson_5.exercise_1;
-
-import java.util.ArrayList;
+package Lesson_5.exercise_1;
 
 public class Student {
     String name;
