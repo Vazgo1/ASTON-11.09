@@ -7,22 +7,7 @@ public class Lesson1 {
     public static void main(String[] args) {
 
         printThreeWords();
-//        checkSumSign();
-//        printColor();
-//        compareNumbers();
-//        positiveNumber(-10);
-//        System.out.println(sum(7, 8));
-//        System.out.println(integer(-1));
-//        intStr("hello", 3);
-//        System.out.println(year(801));
-//        arrayIntegers();
-//        arrayLength();
-//        arrayInt();
-//        doubleArray();
-
         System.out.println( Arrays.toString(lenArray(4,5)));
-
-
     }
 
     public static void printThreeWords() {
@@ -51,7 +36,6 @@ public class Lesson1 {
         } else if (value > 100) {
             System.out.println("зеленый");
         }
-
     }
 
     public static void compareNumbers() {
@@ -68,7 +52,6 @@ public class Lesson1 {
     public static boolean sum(int a, int b) {
         int c = a + b;
         return c >= 10 && c <= 20;
-
     }
 
 
@@ -81,21 +64,17 @@ public class Lesson1 {
     }
 
     public static boolean integer(int a) {
-
         return a >= 0;
-
     }
 
     public static void intStr(String a, int b) {
         for (int i = 0; i < b; i++) {
             System.out.println(a);
-
         }
     }
 
     public static boolean year(int a) {
         return (a % 4 == 0 && a % 100 != 0) || (a % 400 == 0);
-
     }
 
     public static void arrayIntegers() {
@@ -103,13 +82,10 @@ public class Lesson1 {
         for (int i = 0; i < a.length; i++) {
             if (a[i] == 0) {
                 a[i] = 1;
-
             } else if (a[i] == 1) {
                 a[i] = 0;
             }
             System.out.print(a[i] + " ");
-
-
         }
         System.out.println();
     }
@@ -119,10 +95,8 @@ public class Lesson1 {
         for (int i = 0; i < a.length; i++) {
             if (a[i] == 0) {
                 a[i] = i + 1;
-
                 System.out.print(a[i] + " ");
             }
-
         }
         System.out.println();
     }
@@ -132,16 +106,10 @@ public class Lesson1 {
         for (int i = 0; i < a.length; i++) {
             if (a[i] < 6) {
                 a[i] = a[i] * 2;
-
-
             }
-
             System.out.print(a[i] + " ");
-
-
         }
         System.out.println();
-
     }
 
     public static void doubleArray() {
@@ -153,27 +121,18 @@ public class Lesson1 {
         for (int i = 0; i < b; i++) {
             for (int j = 0; j < b; j++) {
                 System.out.print(a[i][j]);
-
             }
             System.out.println();
-
         }
-
     }
+
     public static int[] lenArray(int len, int initialValue) {
         int[] array = new int[len];
         for (int i = 0; i < len; i++) {
             array[i] = initialValue;
-
         }
         return array;
-
-
     }
-
-
-
-
 }
 
 
