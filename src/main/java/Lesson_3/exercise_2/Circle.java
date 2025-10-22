@@ -14,7 +14,6 @@ public class Circle implements Shapes{
         this.borderColor = borderColor;
     }
 
-
     @Override
     public String getFillColor() {
         return fillColor;

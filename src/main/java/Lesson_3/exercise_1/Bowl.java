@@ -25,7 +25,6 @@ public class Bowl {
     public void info() {
         System.out.println("В миске осталось еды: " + food);
     }
-
     public int getFood() {
         return food;
     }

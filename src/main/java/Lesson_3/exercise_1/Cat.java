@@ -29,20 +29,16 @@ public class Cat extends Animals {
 
    public void eat (Bowl bowl,int amount) {
         if (bowl.decreaseFood(amount)) {
-
-
             System.out.println(nickname + " Покушал. Теперь сыт");
-
         }else {
             System.out.println("Недостаточно еды в миске");
         }
+    }
 
-            }
-            public static int getCatCount(){
+    public static int getCatCount(){
         return catCount;
             }
-
-        }
+}
 
 
 

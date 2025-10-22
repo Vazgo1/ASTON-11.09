@@ -10,7 +10,5 @@ public class Main {
         circle.info();
         rectangle.info();
         triangle.info();
-
-
     }
 }

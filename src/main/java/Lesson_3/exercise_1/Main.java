@@ -16,19 +16,10 @@ public class Main {
         dog1.run(300);
         dog1.swam(11);
 
-
-
-
-
-
-
         Cat[] cats = {cat1,cat2,cat3};
         for (int i = 0; i < cats.length; i++) {
-
             Bowl bowl = new Bowl(10);
-
             cats[i].eat(bowl, 15);
-
             bowl.info();
             bowl.addFood(30);
 

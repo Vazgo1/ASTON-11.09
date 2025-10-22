@@ -19,8 +19,6 @@ public interface Shapes {
          System.out.println("Цвет границ " + getBorderColor());
          System.out.println();
      }
-
-
 }
 
 
