@@ -2,7 +2,7 @@ package Lesson_2;
 
 public class Product {
     private String name;
-    private int date;
+    private String date;
     private String country;
     private String condition;
     private int price;
@@ -12,7 +12,7 @@ public class Product {
 
 
 
-    public Product(String name, int date, String country, String condition, int price, String level) {
+    public Product(String name, String date, String country, String condition, int price, String level) {
 
         this.name = name;
         this.date = date;
