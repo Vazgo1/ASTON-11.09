@@ -8,10 +8,6 @@ public class Product {
     private int price;
     private String level;
 
-
-
-
-
     public Product(String name, String date, String country, String condition, int price, String level) {
 
         this.name = name;
@@ -20,7 +16,6 @@ public class Product {
         this.condition = condition;
         this.price = price;
         this.level = level;
-
     }
 
     public void run() {
@@ -30,9 +25,5 @@ public class Product {
         System.out.println("Страна происхождения - " + condition);
         System.out.println("Состояние бронирования покупателем - " + level);
         System.out.println();
-
-
     }
-
-
 }
