@@ -11,10 +11,10 @@ public class Student {
     @Override
     public String toString() {
         return
-                "Имя = " + name  +
-                " Группа = " + group +
-                " Курс = " + well +
-                " Средний бал = " + grades
+                "Имя = " + name +
+                        " Группа = " + group +
+                        " Курс = " + well +
+                        " Средний бал = " + grades
                 ;
     }
 
@@ -25,23 +25,18 @@ public class Student {
         this.grades = grades;
     }
 
-    public  double getGrades(){
-
+    public double getGrades() {
         return grades;
     }
 
-
-    public void add(){
+    public void add() {
         this.well++;
     }
-    public int getWell(){
+
+    public int getWell() {
         return well;
     }
 
 
-
-
-
-
-    }
+}
 
