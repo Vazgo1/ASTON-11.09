@@ -1,0 +1,28 @@
+package Lesson_2;
+
+public class Parc {
+    private String name;
+
+    public Parc(String name) {
+        this.name = name;
+    }
+
+    public class Attraction {
+        private String attraction;
+        private String openingHours;
+        private int price;
+
+        public Attraction (String attraction, String openingHours, int price) {
+            this.attraction = attraction;
+            this.openingHours = openingHours;
+            this.price = price;
+        }
+
+        public void runs() {
+            System.out.println("Название парка - " + Parc.this.name);
+            System.out.println("Атракцион - " + attraction);
+            System.out.println("Время работы - " + openingHours);
+            System.out.println("Цена - " + price);
+        }
+    }
+}
