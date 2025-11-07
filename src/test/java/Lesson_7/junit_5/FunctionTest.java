@@ -8,43 +8,35 @@ public class FunctionTest {
 
     @Test
      void sumTest(){
-
         Assertions.assertTrue(Function.sum(5, 5));
         Assertions.assertTrue(Function.sum(-2, -2));
         Assertions.assertTrue(Function.sum(10, 10));
+    }
 
-
-     }
     @Test
     void sumTestNegative(){
-
         Assertions.assertTrue(Function.sum(2, 5));
         Assertions.assertTrue(Function.sum(-2, -1));
         Assertions.assertTrue(Function.sum(10, 8));
-
-
     }
+
      @Test
      void getTriangleTest(){
-
         Assertions.assertEquals(25.0,Function.getTriangle(5,10));
          Assertions.assertEquals(0.0,Function.getTriangle(5,0));
          Assertions.assertEquals(0.0,Function.getTriangle(0,10));
          Assertions.assertEquals(50.0,Function.getTriangle(10,10));
-
-     }
+    }
 
     @Test
     void getTriangleTestNegative() {
-
         Assertions.assertEquals(25.0, Function.getTriangle(5, 8));
         Assertions.assertEquals(0.0, Function.getTriangle(5, 4));
         Assertions.assertEquals(0.0, Function.getTriangle(8, 10));
         Assertions.assertEquals(50.0, Function.getTriangle(4, 10));
     }
 
-
-     @Test
+    @Test
      void calculatorTest(){
        Assertions.assertEquals(10, Function.calculator(5, 5, '+'));
          Assertions.assertEquals(5, Function.calculator(10, 5, '-'));
@@ -66,8 +58,7 @@ public class FunctionTest {
          Assertions.assertEquals(2, Function.factorial(2));
          Assertions.assertEquals(6, Function.factorial(3));
          Assertions.assertEquals(120, Function.factorial(5));
-
-     }
+    }
 
     @Test
     void factorialTestNegative(){
@@ -75,6 +66,5 @@ public class FunctionTest {
         Assertions.assertEquals(4, Function.factorial(2));
         Assertions.assertEquals(7, Function.factorial(3));
         Assertions.assertEquals(120, Function.factorial(8));
-
     }
 }
