@@ -3,15 +3,16 @@ package Lesson_7.junit_5;
 public class Function {
 
 
-    public static boolean sum(int a, int b) {
+    public static String sum(int a, int b) {
         if (a > b) {
-            return false;
+            return a + " Больше чем " + b;
         } else if (a < b) {
-            return false;
+            return a + " Меньше чем " + b;
         } else {
-            return true;
+            return a + " Равно " + b;
         }
     }
+
 
 
     public static double getTriangle(double width, double height) {
