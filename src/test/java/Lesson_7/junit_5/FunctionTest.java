@@ -7,17 +7,17 @@ import org.junit.jupiter.api.Test;
 public class FunctionTest {
 
     @Test
-     void sumTest(){
-        Assertions.assertTrue(Function.sum(5, 5));
-        Assertions.assertTrue(Function.sum(-2, -2));
-        Assertions.assertTrue(Function.sum(10, 10));
+    void compareTest() {
+        Assertions.assertEquals("5 Больше чем 3", Function.compare(5, 3));
+        Assertions.assertEquals("2 Меньше чем 7", Function.compare(2, 7));
+        Assertions.assertEquals("4 Равно 4", Function.compare(4, 4));
     }
 
     @Test
     void sumTestNegative(){
-        Assertions.assertTrue(Function.sum(2, 5));
-        Assertions.assertTrue(Function.sum(-2, -1));
-        Assertions.assertTrue(Function.sum(10, 8));
+        Assertions.assertEquals("jnj",Function.compare(2, 5));
+        Assertions.assertEquals("fdfd",Function.compare(-2, -1));
+        Assertions.assertEquals("dfdf",Function.compare(10, 8));
     }
 
      @Test
