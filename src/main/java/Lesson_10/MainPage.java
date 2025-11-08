@@ -36,6 +36,10 @@ public class MainPage {
     private By sum = By.xpath("//div[contains(@class,'pay-description__cost')]//span[contains(text(),'BYN')]");
     private By iframeNumber = By.xpath("//div[@class=\"pay-description__text\"]");
     private By iframeInput1 = By.xpath("//label[normalize-space(.)='Номер карты']");
+    private By iframeInput2 = By.xpath("//label[normalize-space(.)='Срок действия']");
+    private By iframeInput3 = By.xpath("//label[normalize-space(.)='Имя и фамилия на карте']");
+    private By iframeInput4 = By.xpath("//label[normalize-space(.)='CVC']");
+    private By iframeLogo = By.xpath("//div[contains(@class,'cards-brands')]/img[contains(@src,'visa-system.svg')]");
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
@@ -203,10 +207,57 @@ public class MainPage {
         } else {
             System.out.println("Текст не совпадает");
         }
-
         driver.switchTo().defaultContent();
     }
 
+    public void iframeInput2(String inp){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebElement frame = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("iframe.bepaid-iframe")));
+        driver.switchTo().frame(frame);
+        WebElement text = driver.findElement(iframeInput2);
+        String placeholderText = text.getText();
+        if (placeholderText.equals(inp)) {
+            System.out.println("ожидаемый текст  "+ inp + " фактический текст " + placeholderText +" Текст совпадает");
+        } else {
+            System.out.println("Текст не совпадает");
+        }
+        driver.switchTo().defaultContent();
+    }
+
+    public void iframeInput3(String inp){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebElement frame = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("iframe.bepaid-iframe")));
+        driver.switchTo().frame(frame);
+        WebElement text = driver.findElement(iframeInput3);
+        String placeholderText = text.getText();
+        if (placeholderText.equals(inp)) {
+            System.out.println("ожидаемый текст  "+ inp + " фактический текст " + placeholderText +" Текст совпадает");
+        } else {
+            System.out.println("Текст не совпадает");
+        }
+        driver.switchTo().defaultContent();
+    }
+
+    public void iframeInput4(String inp){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebElement frame = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("iframe.bepaid-iframe")));
+        driver.switchTo().frame(frame);
+        WebElement text = driver.findElement(iframeInput4);
+        String placeholderText = text.getText();
+        if (placeholderText.equals(inp)) {
+            System.out.println("ожидаемый текст  "+ inp + " фактический текст " + placeholderText +" Текст совпадает");
+        } else {
+            System.out.println("Текст не совпадает");
+        }
+        driver.switchTo().defaultContent();
+    }
+
+    public boolean getIframeLogo() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebElement frame = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("iframe.bepaid-iframe")));
+        driver.switchTo().frame(frame);
+        return driver.findElement(iframeLogo).isDisplayed();
+    }
     }
 
 

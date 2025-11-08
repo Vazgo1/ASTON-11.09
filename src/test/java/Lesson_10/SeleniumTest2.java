@@ -10,48 +10,37 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 public class SeleniumTest2 {
-    private WebDriver driver;
-
-//    @BeforeAll
-//    public void before(){
-//        driver = new ChromeDriver();
-//    }
-//
-//    @AfterEach
-//public void down(){
-//        driver.quit();
-//}
-
     @Test
     void testText() {
-
+        WebDriver driver = new ChromeDriver();
         MainPage mainPage = new MainPage(driver);
         mainPage.open();
         mainPage.acceptCookies();
         mainPage.getPayText("Онлайн пополнение\n" +
                 "без комиссии");
+        driver.quit();
     }
 
     @Test
     void getLogo() {
-
+        WebDriver driver = new ChromeDriver();
         MainPage mainPage = new MainPage(driver);
         mainPage.open();
         mainPage.acceptCookies();
         Assert.assertTrue(mainPage.getLogo1()||mainPage.getLogo2()||mainPage.getLogo3()||mainPage.getLogo4()||mainPage.getLogo5());
         System.out.println("Логотипы  отображаются");
-
+        driver.quit();
     }
 
     @Test
     void testHref (){
-
+        WebDriver driver = new ChromeDriver();
         MainPage mainPage = new MainPage(driver);
         mainPage.open();
         mainPage.acceptCookies();
         mainPage.getHref();
         System.out.println("Переход на страницу состоялся " + mainPage.getCurrentUrl());
-
+        driver.quit();
     }
 
     @Test
@@ -139,6 +128,10 @@ public class SeleniumTest2 {
         mainPage.getInfoSum("100.00 BYN");
         mainPage.getInfoNumber("Оплата: Услуги связи Номер:375297777777");
         mainPage.iframeInput("Номер карты");
+        mainPage.iframeInput2("Срок действия");
+        mainPage.iframeInput3("Имя и фамилия на карте");
+        mainPage.iframeInput4("CVC");
+        mainPage.getIframeLogo();
         driver.quit();
     }
 }
